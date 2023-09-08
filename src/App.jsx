@@ -22,7 +22,11 @@ function App() {
       <ul>
         {/* Items Here */}
         {/* Use map here for  */}
-        <Hobby data={hobbyData} />
+        {/* <Hobby data={hobbyData} /> */}
+
+        {hobbyData.map((e) => (
+          <Hobby data={e} />
+        ))}
       </ul>
     </main>
   );

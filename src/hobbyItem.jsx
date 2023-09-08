@@ -46,9 +46,11 @@ export default function Hobby(hobbyData) {
   return (
     <div>
       {/* Hobby Title */}
-      <h1>
+      <h1>{hobbyData.hobbyName}</h1>
+      {/* Hobby timer */}
+      <h3>
         {pad(hours)}:{pad(mins)}:{pad(sec)}
-      </h1>
+      </h3>
       <button onClick={startTimer}>Start</button>
       <button onClick={stopTimer}>Stop</button>
     </div>
